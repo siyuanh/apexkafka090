@@ -1,9 +1,14 @@
 # New Kafka Input Operator Example
 
-### Build 
+### Build With Apache Kafka Client
 ```
 $ git clone git@github.com:siyuanh/apexkafka090.git
 $ mvn clean install -DskipTests
+```
+### Build With MapR Stream Client
+```
+$ git clone git@github.com:siyuanh/apexkafka090.git
+$ mvn clean install -DskipTests -f pom-mapr.xml
 ```
 ### Create new topic
 ```sh

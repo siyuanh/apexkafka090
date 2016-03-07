@@ -27,7 +27,7 @@ public class Application implements StreamingApplication
 
     KafkaExampleOperator kafkaInputOperatorExample = dag.addOperator("kafkainput", KafkaExampleOperator.class);
     kafkaInputOperatorExample.setClusters("localhost:9092");
-    kafkaInputOperatorExample.setTopics("localtest3");
+    kafkaInputOperatorExample.setTopics("/user/mapr/mystream:topic0");
     kafkaInputOperatorExample.setStrategy("ONE_TO_MANY");
 
 
